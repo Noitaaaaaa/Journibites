@@ -94,6 +94,7 @@ class JourniBitesApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'JourniBites',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorSchemeSeed: Colors.deepOrange,
         useMaterial3: true,

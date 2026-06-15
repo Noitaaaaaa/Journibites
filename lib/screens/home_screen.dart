@@ -318,18 +318,17 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('JourniBites'),
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(56),
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
-            child: Row(
-              children: [
-                // Search bar
-                Expanded(
-                  child: SizedBox(
-                    height: 40,
-                    child: TextField(
+        toolbarHeight: 0,
+         bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(66),
+           child: Padding(
+             padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
+               child: Row(
+                children: [
+                 Expanded(
+                   child: SizedBox(
+                     height: 50,
+                     child: TextField(
                       controller: _searchController,
                       decoration: InputDecoration(
                         hintText: 'Search restaurants...',
